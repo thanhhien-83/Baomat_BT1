@@ -62,7 +62,7 @@ Kết luận: Affine không an toàn cho ứng dụng thật vì không gian kh�
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ed0e298e-7331-42d3-b021-58b9d301f4e6" />
 
 # Giải Mã
-![Uploading image.png…]()
+
 
 
 
