@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cipher Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cipher Playground</h1>
+    <p>Giao diện Web cho các thuật toán mã hóa trong repository: Caesar, Affine, Playfair, Permutation (Hoán vị) và Vigenère.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>Chọn cipher:</label>
+      <div id="methodTabs" class="tabs">
+        <button class="tab active" data-cipher="caesar">Caesar</button>
+        <button class="tab" data-cipher="affine">Affine</button>
+        <button class="tab" data-cipher="playfair">Playfair</button>
+        <button class="tab" data-cipher="permutation">Permutation</button>
+        <button class="tab" data-cipher="vigenere">Vigenère</button>
+      </div>
+
+      <div id="params"></div>
+      <div id="matrixContainer" aria-hidden="true"></div>
+
+      <label for="inputText">Văn bản:</label>
+      <textarea id="inputText" rows="4"></textarea>
+
+      <div class="buttons">
+        <button id="encryptBtn">Mã hóa</button>
+        <button id="decryptBtn">Giải mã</button>
+        <button id="clearBtn">Xóa</button>
+      </div>
+
+      <label for="outputText">Kết quả:</label>
+      <textarea id="outputText" rows="4" readonly></textarea>
+    </section>
+
+    <section class="notes">
+      <h2>Ghi chú & các quy ước</h2>
+      <ul>
+        <li>Playfair: chữ 'J' được hợp nhất thành 'I' (theo mã nguồn `Playfair.cpp`).</li>
+        <li>Permutation: nhập khóa là danh sách các số (1-based) tách bởi dấu space, ví dụ: <code>3 1 4 2</code>.</li>
+        <li>Affine: tham số <code>a</code> phải có nghịch đảo modulo 26 (gcd(a,26)=1) — nếu không, giải mã sẽ báo lỗi.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
