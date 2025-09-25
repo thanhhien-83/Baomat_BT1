@@ -33,30 +33,28 @@ Code C++ và web ở trên cho phép bạn mã hoá/giải mã và thử brute-f
 # Mã Hóa  
 <img width="1422" height="752" alt="image" src="https://github.com/user-attachments/assets/97fd6498-c1d1-46dd-889f-e9f133b59dc5" />  
 
-# Giải Mã
+# Giải Mã  
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ff90397-0f77-41ab-9e81-c0dcaecc9eba" />  
-# Thuật toán 2: Affine 
-# Tên gọi: 
+# Thuật toán 2: Affine  
+# Tên gọi:  
 Affine cipher — mã Affine (một substitution cipher tuyến tính).  
 # Thuật toán mã hoá & giải mã (ngắn gọn)  
 Quy ước: a=0, b=1, ..., z=25 (xử lý chữ thường).  
 Khóa gồm hai số nguyên: a và b.  
 Mã Hóa: c=(a⋅p+b)mod26  
-Giải Mã: cần nghịch đảo modular a^{-1} (mod 26), gọi là a_inv:  
+Giải Mã: cần nghịch đảo modular a^{-1} (mod 26), gọi là a_inv:   
   p=ainv​⋅(c−b)mod26  
-# Không gian khóa
-a phải nguyên tố cùng nhau với 26: các giá trị hợp lệ:
-1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25 → 12 giá trị.
+# Không gian khóa  
+a phải nguyên tố cùng nhau với 26: các giá trị hợp lệ:  
+1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25 → 12 giá trị.  
 
-b có thể là 0..25 → 26 giá trị.
-Tổng không gian khóa = 12 * 26 = 312 cặp (a,b).
-# Cách phá mã (không cần khóa) — ngắn gọn
-Brute-force: thử hết 312 cặp (a,b) và kiểm tra kết quả (bằng mắt hoặc bằng dictionary) — nhanh.
-
-Phân tích tần suất: giống substitution — nếu ciphertext đủ dài, map ký tự hay xuất hiện nhất về ký tự phổ biến → suy a,b.
-
-Known-plaintext (crib): biết một đoạn plaintext → giải nhanh a,b.
-Kết luận: Affine không an toàn cho ứng dụng thật vì không gian khóa nhỏ và có thể brute-force.
+b có thể là 0..25 → 26 giá trị.  
+Tổng không gian khóa = 12 * 26 = 312 cặp (a,b).  
+# Cách phá mã (không cần khóa) — ngắn gọn  
+Brute-force: thử hết 312 cặp (a,b) và kiểm tra kết quả (bằng mắt hoặc bằng dictionary) — nhanh.  
+Phân tích tần suất: giống substitution — nếu ciphertext đủ dài, map ký tự hay xuất hiện nhất về ký tự phổ biến → suy a,b.  
+Known-plaintext (crib): biết một đoạn plaintext → giải nhanh a,b.  
+Kết luận: Affine không an toàn cho ứng dụng thật vì không gian khóa nhỏ và có thể brute-force.  
 
 # Hình ảnh kiểm thử: 
 # Mã Hóa
