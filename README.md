@@ -35,6 +35,7 @@ Code C++ và web ở trên cho phép bạn mã hoá/giải mã và thử brute-f
 
 # Giải Mã  
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ff90397-0f77-41ab-9e81-c0dcaecc9eba" />  
+
 # Thuật toán 2: Affine  
 # Tên gọi:  
 Affine cipher — mã Affine (một substitution cipher tuyến tính).  
